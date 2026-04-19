@@ -3,7 +3,7 @@ title: Deep Agents 学习09 ACP
 pubDate: 2026-04-19
 categories: ['Deep Agents']
 description: '讲清如何把 Deep Agent 包装成 ACP 服务接入 IDE，包括 `AgentServerACP`、stdio 运行方式与编辑器集成思路。'
-slug: deep-agents-customization
+slug: deep-agents-acp
 ---
 
 当一个 Deep Agent 只能在终端里运行时，它的能力边界往往还停留在“脚本助手”阶段。ACP 的价值在于，它给编辑器和 Agent 之间补上了一层标准连接方式，让你已经定制好的模型、工具、记忆和审批逻辑，能够真正进入 IDE 工作流，而不是孤立在单独进程里。
