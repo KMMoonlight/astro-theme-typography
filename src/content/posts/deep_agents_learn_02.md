@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习02 Customization
-pubDate: 2026-04-19
+pubDate: 2026-04-18
 categories: ['Deep Agents']
 description: '系统梳理 Deep Agents 可以定制的能力面，包括模型、工具、中间件、子代理、记忆与输出结构。'
 slug: deep-agents-customization
