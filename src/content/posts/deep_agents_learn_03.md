@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习03 Models
-pubDate: 2026-04-19
+pubDate: 2026-04-17
 categories: ['Deep Agents']
 description: '讲清 Deep Agents 的模型选型逻辑、provider:model 写法、参数控制方式，以及运行时动态换模的实践路径。'
 slug: deep-agents-models
