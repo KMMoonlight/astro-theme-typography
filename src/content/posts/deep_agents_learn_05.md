@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习05 Sandboxes
-pubDate: 2026-04-19
+pubDate: 2026-04-15
 categories: ['Deep Agents']
 description: '深入说明 Deep Agents 如何接入隔离执行环境，包括 sandbox backend、生命周期、文件传输、安全边界与 provider 选型。'
 slug: deep-agents-sandboxes
