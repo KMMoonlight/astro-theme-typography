@@ -1,7 +1,7 @@
 ---
 title: Deep Agents 学习01 Quickstart
 pubDate: 2026-04-19
-categories: ['deep agents']
+categories: ['Deep Agents']
 description: '从零开始理解 Deep Agents 的工作方式，并一步步搭出一个真正能调用工具完成任务的最小可用 Agent。'
 slug: deep-agents-quick-start
 ---
