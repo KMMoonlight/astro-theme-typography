@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习04 Backends
-pubDate: 2026-04-19
+pubDate: 2026-04-16
 categories: ['Deep Agents']
 description: '从整体视角理解 Deep Agents 的 backend 体系，包括文件系统工具、路由组合、持久化策略与自定义后端设计。'
 slug: deep-agents-backends
