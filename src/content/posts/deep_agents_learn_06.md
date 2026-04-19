@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习06 Permissions
-pubDate: 2026-04-19
+pubDate: 2026-04-14
 categories: ['Deep Agents']
 description: '说明如何用声明式 permissions 规则控制内置文件工具的读写范围、路径边界，以及主代理与子代理的权限隔离。'
 slug: deep-agents-permissions
