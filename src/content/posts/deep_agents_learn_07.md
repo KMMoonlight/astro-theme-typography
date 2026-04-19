@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习07 Human in the loop
-pubDate: 2026-04-19
+pubDate: 2026-04-13
 categories: ['Deep Agents']
 description: '介绍 Deep Agents 的 human-in-the-loop 机制，包括 `interrupt_on`、审批决策、恢复执行与子代理审批设计。'
 slug: deep-agents-human-int-the-loop
