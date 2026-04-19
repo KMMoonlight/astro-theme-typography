@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习08 CLI
-pubDate: 2026-04-19
+pubDate: 2026-04-12
 categories: ['Deep Agents']
 description: '完整梳理 Deep Agents CLI 的能力边界、交互方式、slash 命令、记忆技能、非交互执行以及 sandbox 和 tracing 集成。'
 slug: deep-agents-cli
