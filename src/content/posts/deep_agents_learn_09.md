@@ -1,6 +1,6 @@
 ---
 title: Deep Agents 学习09 ACP
-pubDate: 2026-04-19
+pubDate: 2026-04-11
 categories: ['Deep Agents']
 description: '讲清如何把 Deep Agent 包装成 ACP 服务接入 IDE，包括 `AgentServerACP`、stdio 运行方式与编辑器集成思路。'
 slug: deep-agents-acp
