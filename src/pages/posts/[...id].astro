@@ -1,6 +1,7 @@
 ---
 import type { GetStaticPaths, InferGetStaticPropsType } from 'astro'
 import Comments from '~/components/Comments.astro'
+import Mermaid from '~/components/Mermaid.astro'
 import Pagination from '~/components/Pagination.astro'
 import SiteSeo from '~/components/SiteSeo.astro'
 import LayoutDefault from '~/layouts/LayoutDefault.astro'
@@ -26,6 +27,7 @@ type Props = InferGetStaticPropsType<typeof getStaticPaths>
 const { entry, prev, next } = Astro.props
 const { Content } = await render(entry)
 const { translate: t } = Astro.locals
+const hasMermaid = entry.body?.includes('```mermaid') ?? false
 
 function getUrl(id: string) {
   return `/posts/${id}`
@@ -34,6 +36,7 @@ function getUrl(id: string) {
 
 <LayoutDefault>
   <SiteSeo slot="seo" title={entry.data.title} desc={entry.data.description} banner={entry.data.banner} />
+  {hasMermaid && <Mermaid />}
 
   <LayoutPost post={entry}>
     <Content />

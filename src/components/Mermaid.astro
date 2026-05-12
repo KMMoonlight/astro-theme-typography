@@ -1,0 +1,61 @@
+<script>
+  import mermaid from 'mermaid'
+
+  const globalWindow = window as Window & { __mermaidSetup?: boolean }
+
+  async function renderMermaid() {
+    const nodes = Array.from(document.querySelectorAll<HTMLElement>('pre.mermaid')).filter(
+      (node) => !node.dataset.processed,
+    )
+
+    if (!nodes.length) {
+      return
+    }
+
+    mermaid.initialize({
+      startOnLoad: false,
+      securityLevel: 'loose',
+      theme: document.documentElement.classList.contains('dark') ? 'dark' : 'default',
+    })
+
+    await mermaid.run({ nodes })
+  }
+
+  function safeRenderMermaid() {
+    renderMermaid().catch((error) => {
+      console.error('Failed to render Mermaid diagrams.', error)
+    })
+  }
+
+  function setupMermaid() {
+    safeRenderMermaid()
+    document.addEventListener('astro:page-load', safeRenderMermaid)
+  }
+
+  if (!globalWindow.__mermaidSetup) {
+    globalWindow.__mermaidSetup = true
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', setupMermaid, { once: true })
+    }
+    if (document.readyState !== 'loading') {
+      setupMermaid()
+    }
+  }
+</script>
+
+<style is:global>
+  .prose pre.mermaid {
+    padding: 0;
+    overflow-x: auto;
+    white-space: normal;
+    background: transparent;
+  }
+
+  .prose pre.mermaid svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+  }
+</style>
